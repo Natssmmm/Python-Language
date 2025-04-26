@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Create data for the flower
+theta = np.linspace(0, 2 * np.pi, 100)
+r = 1 + 0.5 * np.sin(6 * theta)
+
+# Convert polar to cartesian coordinates
+x = r * np.cos(theta)
+y = r * np.sin(theta)
+
+# Plot the flower
+plt.figure(figsize=(6, 6))
+plt.fill(x, y, color='skyblue')
+plt.title('Sky Blue Flower')
+plt.axis('equal')
+plt.show()
